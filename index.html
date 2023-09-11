@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey FOrm</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">This form below is a survey form</p>
+
+    <p></p>
+    <div class="container">
+      <form id="survey-form">
+        <label id="name-label">Name</label><br />
+        <input
+          type="text"
+          id="name"
+          class="name"
+          placeholder="enter your name"
+          required
+        /><br /><br />
+        <label id="email-label">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          class="name"
+          placeholder="enter your email"
+          required
+        /><br /><br />
+        <label id="number-label">Age(optional)</label><br />
+        <input
+          type="number"
+          id="number"
+          class="name"
+          placeholder="Age"
+          min="18"
+          max="50"
+        /><br /><br />
+        <labe id="name-label"
+          >Which option best describes your current role?</labe
+        ><br />
+        <select id="dropdown">
+          <option value="select role">Select Current Role</option>
+          <option value="Student">Student</option>
+          <option value="full time learner">Full Time Learner</option>
+          <option value="prefer not to say">Prefer Not To Say</option>
+          <option value="others">Others</option></select
+        ><br /><br />
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <br />
+        <input
+          type="radio"
+          id="definitely"
+          name="response"
+          value="definitely"
+        />
+        <label for="definitely">Definitely</label>
+        <input type="radio" id="maybe" name="response" value="maybe" />
+        <label for="maybe">Maybe</label>
+        <input type="radio" id="not sure" name="response" value="not sure" />
+        <label for="not sure">Not Sure</label><br /><br />
+
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <input
+          type="checkbox"
+          name="value"
+          id="value"
+          value="front-end projects"
+        />
+        <label> Front-end Projects</label><br />
+        <input
+          type="checkbox"
+          name="value"
+          id="value"
+          value="back-end projects"
+        />
+        <label>Back-end Projects</label><br />
+        <input
+          type="checkbox"
+          name="value"
+          id="value"
+          value="data visualization"
+        />
+        <label>Data Visualization</label><br />
+        <input type="checkbox" name="value" id="value" value="challenges" />
+        <label>Challenges</label><br />
+        <input
+          type="checkbox"
+          name="value"
+          id="value"
+          value="open source community"
+        />
+        <label>Open Source Community</label><br />
+        <input
+          type="checkbox"
+          name="value"
+          id="value"
+          value="gitter help rooms"
+        />
+        <label>Gitter help rooms</label><br />
+        <input type="checkbox" name="value" id="value" value="videos" />
+        <label>Videos</label><br />
+        <input type="checkbox" name="value" id="value" value="wiki" />
+        <label>Wiki</label><br />
+        <input type="checkbox" name="value" id="value" value="forum" />
+        <label>Forum</label><br />
+        <input type="checkbox" name="value" id="value" value="city meetups" />
+        <label>City Meetups</label><br />
+        <p>Any comments or suggestions?</p>
+        <textarea>Enter your comment here</textarea><br /><br />
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
